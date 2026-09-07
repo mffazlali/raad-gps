@@ -30,3 +30,5 @@ dev-dist
 /build/
 .dockerignore
 .env-dev
+docker-compose.yml
+Dockerfile
