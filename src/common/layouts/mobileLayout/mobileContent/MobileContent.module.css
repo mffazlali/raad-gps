@@ -1,0 +1,9 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.mobileContent {
+@apply relative w-full h-[calc(100Dvh-58px)];
+}
+
+.mobileContent .mobileContentContainer {
+    @apply relative w-full h-full;
+}

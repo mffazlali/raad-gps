@@ -1,0 +1,5 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.input {
+    @apply px-2 box-border;
+}

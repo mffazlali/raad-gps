@@ -1,0 +1,18 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.serverTime {
+    @apply absolute bottom-6 z-[1] sm:right-[23rem] right-[10px] w-[175px] h-[32px] select-none;
+}
+
+.serverTime .serverTimeContainer {
+    @apply relative w-full h-full inline-flex py-1 px-4 justify-between items-center gap-[10px] rounded-[4px] bg-[rgba(30,30,30,0.10)] backdrop-blur-[5px];
+}
+
+.serverTime .serverTimeContainer .timeValue {
+    @apply text-black text-center text-sm leading-6 w-[49%];
+}
+
+.serverTime .serverTimeContainer .timeSeperate {
+    @apply w-[2%];
+}
+

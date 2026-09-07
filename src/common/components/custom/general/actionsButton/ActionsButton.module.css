@@ -1,0 +1,40 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.actionsWrapper, .actionWrapper {
+    @apply relative w-full sm:h-auto h-[50px] mt-7;
+}
+
+.actionsWrapper .actions, .actionWrapper .action {
+    @apply flex justify-center gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.actionsWrapper .actions .button {
+    @apply sm:w-[48%] w-[48%];
+}
+
+.actionWrapper .action {
+    @apply flex justify-start gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.actionWrapper .action .button {
+    @apply w-[48%];
+}
+
+.actionsWrapper .actions .button .label, .actionWrapper .action .button .label {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.actionsWrapper .actions .cancelButton, .actionWrapper .action .cancelButton {
+    @apply border border-solid border-hitBox bg-hitBox hover:!border-primary-hover;
+}
+
+.actionsWrapper .actions .cancelButton .cancelLabel, .actionWrapper .action .cancelButton .cancelLabel {
+    @apply text-primary disabled:!text-primary-disable hover:!text-primary active:!text-primary-active;
+}
+
+.actionsWrapper .actions .registerButton {
+}
+
+.actionsWrapper .actions .registerButton .registerLabel {
+    @apply text-white;
+}

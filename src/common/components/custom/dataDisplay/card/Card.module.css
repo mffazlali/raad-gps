@@ -1,0 +1,28 @@
+/*@import "tailwindcss";*/
+
+.card {
+    @apply pt-3;
+}
+
+.card .cardContainer {
+    @apply flex flex-col gap-4
+}
+
+.card .cardContainer .headerWrapper {
+}
+
+.card .cardContainer .headerWrapper .header {
+    @apply text-black text-right text-xl font-semibold leading-normal
+}
+
+.card .cardContainer .contentWrapper {
+    @apply px-4
+}
+
+.card .cardContainer .contentWrapper .content {
+
+}
+
+
+
+

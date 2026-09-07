@@ -1,0 +1,7 @@
+.inputsWrapper {
+  @apply bg-white rounded-lg shadow-md overflow-hidden flex-1 h-[100%-200px];
+}
+
+.inputsContent {
+  @apply h-full overflow-y-auto p-4;
+}

@@ -1,0 +1,172 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.loginPageForm {
+    @apply flex flex-col justify-center items-center gap-6;
+}
+
+.loginPageForm .subjectWrapper {
+}
+
+.loginPageForm .subjectWrapper .subject {
+    @apply flex flex-col justify-center items-center gap-4;
+}
+
+.loginPageForm .subjectWrapper .subject .logoWrapper {
+}
+
+.loginPageForm .subjectWrapper .subject .helpWrapper {
+    @apply sm:pt-12 pt-7;
+}
+
+.loginPageForm .subjectWrapper .subject .helpWrapper .help {
+    @apply text-gray-900 text-center text-3xl font-semibold leading-[2.4rem];
+}
+
+.loginPageForm .subjectWrapper .subject .sloganWrapper {
+    @apply pt-2;
+}
+
+.loginPageForm .subjectWrapper .subject .sloganWrapper .slogan {
+    @apply text-lg font-medium text-center text-gray-500 leading-7 sm:w-auto w-[300px];
+}
+
+.loginPageForm .formWrapper {
+}
+
+.loginPageForm .formWrapper .form {
+    @apply flex flex-col justify-center items-start sm:w-auto w-[300px];
+}
+
+.loginPageForm .formWrapper .form .groups {
+    @apply flex gap-4 flex-col relative w-full;
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper {
+    @apply flex flex-col
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .group {
+    @apply flex flex-col;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .errorWrapper {
+    @apply text-theme-danger text-right text-sm font-normal leading-4 mt-2 h-[20px];
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .group .labelWrapper {
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .group .labelWrapper .label {
+    @apply text-gray-800 text-right text-base font-medium leading-6;
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .group .labelWrapper .labelSuccess {
+    @apply text-gray-800;
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .group .labelWrapper .labelError, .loginPageForm .subjectWrapper .subject .sloganWrapper .sloganError {
+    @apply text-[#980000];
+}
+
+.loginPageForm
+.formWrapper
+.form
+.groups
+.groupWrapper
+.group
+.labelWrapper
+.label
+span {
+    @apply text-[#980000];
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .group .inputWrapper {
+    @apply flex lg:w-[358px] w-full gap-2 h-[46px] px-[0.44rem] py-[0.3rem] rounded-[8px] border border-solid border-gray-200 bg-white;
+}
+
+.loginPageForm .formWrapper .form .groups .groupWrapper .group .inputWrapper .input, .ant-input-affix-wrapper .input {
+    @apply text-gray-900 text-right text-base font-normal leading-6 w-full relative !border-none border-[0px] focus:!border-[0px] !outline-[0px] focus-within:!outline-[0px] focus:!outline-[0px] focus:!shadow-none focus-within:!shadow-none;
+}
+
+.loginPageForm .formWrapper .form .groupRow {
+    @apply flex flex-row  justify-between;
+}
+
+.loginPageForm .formWrapper .form .groupRow .groupRowRight {
+    @apply w-6/12;
+}
+
+.loginPageForm .formWrapper .form .groupRow .groupRowRight .checkBoxWrapper {
+    @apply flex items-center gap-2;
+}
+
+.loginPageForm
+.formWrapper
+.form
+.groupRow
+.groupRowRight
+.checkBoxWrapper
+.checkBox {
+    @apply w-[16px] h-[16px] rounded-[4px] bg-white;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.loginPageForm
+.formWrapper
+.form
+.groupRow
+.groupRowRight
+.checkBoxWrapper
+.label {
+    @apply text-gray-800 text-right text-xs font-medium leading-[1.125rem];
+}
+
+.loginPageForm .formWrapper .form .groupRow .groupRowLeft {
+    @apply w-6/12;
+}
+
+.loginPageForm .formWrapper .form .groupRow .groupRowLeft .linkWrapper {
+    @apply text-left;
+}
+
+.loginPageForm .formWrapper .form .groupRow .groupRowLeft .linkWrapper .link {
+    @apply text-primary-500 text-right text-xs font-medium leading-[1.125rem];
+}
+
+.loginPageForm .formWrapper .form .hintWrapper {
+    @apply flex flex-col justify-center items-start list-disc gap-[0.4rem] pt-4 ps-6;
+}
+
+.loginPageForm .formWrapper .form .hintWrapper .hint {
+    @apply text-[#518756] text-right text-sm font-normal leading-[1.13rem];
+}
+
+.loginPageForm .formWrapper .form .hintWrapper .hint span {
+    @apply !text-[#875555];
+}
+
+.loginPageForm .formWrapper .form .buttonWrapper {
+    @apply mt-8 relative w-full;
+}
+
+.loginPageForm .formWrapper .form .buttonWrapper .button {
+    @apply relative flex lg:w-[358px] w-full py-[6px] px-[12px] justify-center items-center gap-2 rounded-[4px] border border-solid border-theme-primary;
+}
+
+.loginPageForm .formWrapper .form .buttonWrapper .button span {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.loginPageForm .forwardLinkWrapper {
+    @apply sm:relative absolute sm:bottom-0 bottom-5 sm:pt-2 pt-0 flex justify-center items-center;
+}
+
+.loginPageForm .forwardLinkWrapper .forwardLink {
+    @apply text-black text-center text-xs font-medium leading-[1.125rem];
+}
+
+.loginPageForm .forwardLinkWrapper .forwardLink span {
+    @apply text-primary-500;
+}

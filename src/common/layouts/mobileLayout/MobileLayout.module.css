@@ -1,0 +1,9 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.mobileLayout {
+@apply sm:hidden block w-screen h-[100dvh] overflow-hidden;
+}
+
+.mobileLayout .mobileLayoutContainer {
+    @apply relative w-screen h-full flex flex-col overflow-hidden
+}

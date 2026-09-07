@@ -1,0 +1,18 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.tabSidebar {
+    @apply lg:w-2/12 sm:w-3/12 h-full select-none;
+    /*shadow-[2px_2px_30px_0px_rgba(0,0,0,0.10)]*/
+}
+
+.tabSidebar .tabSidebarContainer {
+    @apply absolute rounded-[10px] h-full lg:w-[18%] sm:w-[27%] top-0 -right-2 z-[5000000] border-l-[10px] border-solid border-gray-100 shadow-[2px_2px_30px_0px_rgba(0,0,0,0.10)];
+}
+
+.tabSidebar .tabSidebarContainer .tabSidebarWrapper {
+    @apply bg-gray-100 w-full h-[100dvh] md:px-4 sm:px-1 pt-[45px] pb-8 relative;
+}
+
+.tabSidebar .tabSidebarContainer .tabSidebarHeader {
+    @apply text-black text-2xl font-extrabold leading-8 ps-4 pb-2;
+}

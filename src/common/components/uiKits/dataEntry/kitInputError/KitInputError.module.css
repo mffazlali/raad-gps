@@ -1,0 +1,5 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.inputError {
+    @apply max-h-[20px] text-right text-sm font-normal leading-[1.13rem] text-[#875555] z-[10000];
+}

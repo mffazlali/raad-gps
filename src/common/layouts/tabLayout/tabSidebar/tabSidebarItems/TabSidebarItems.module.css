@@ -1,0 +1,10 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.tabSidebarItems {
+    @apply relative overflow-auto max-h-full;
+    direction: ltr;
+}
+
+.tabSidebarItems .tabSidebarItemsContainer{
+    @apply flex flex-col w-full max-h-[100dvh] items-start shrink-0 relative;
+}

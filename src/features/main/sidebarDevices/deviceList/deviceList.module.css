@@ -1,0 +1,6 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.deviceListItemsWrapper {
+    @apply flex flex-col justify-start gap-4 w-[100%] pt-3 sm:pb-0 pb-3 px-[2%] h-[calc(100%-200px)] overflow-auto relative;
+    direction: ltr;
+}

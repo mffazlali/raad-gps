@@ -1,0 +1,31 @@
+.collapse {
+  @apply w-full border border-gray-200 rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 ease-in-out;
+}
+
+.header {
+  @apply flex items-center justify-between py-4 px-5 cursor-pointer bg-white hover:bg-theme-light transition-all duration-200 rounded-t-lg;
+}
+
+.fixedHeader {
+  @apply sticky top-0 z-10 bg-white/95 backdrop-blur-sm shadow-md;
+}
+
+.headerContent {
+  @apply flex-1 text-gray-700 text-sm font-medium;
+}
+
+.icon {
+  @apply w-5 h-5 text-gray-600 hover:text-primary-hover disabled:text-primary-disable transition-all duration-300 ease-in-out;
+}
+
+.iconOpen {
+  @apply transform rotate-180 text-primary-active hover:text-primary-hover disabled:text-primary-disable;
+}
+
+.content {
+  @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-white rounded-b-lg;
+}
+
+.contentOpen {
+  @apply max-h-[2000px] py-5 px-5 border-t border-gray-100;
+} 

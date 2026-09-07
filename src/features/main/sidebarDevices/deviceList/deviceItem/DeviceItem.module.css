@@ -1,0 +1,168 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.deviceItem {
+    @apply flex flex-row  justify-start items-center h-[32px] gap-1;
+}
+
+.deviceItem
+.bellIconWrapper {
+}
+
+.deviceItem
+.bellIconWrapper
+.bellIcon {
+    @apply h-[24px] w-[24px] scale-[0.8] cursor-pointer hover:rotate-[30deg] transition-all;
+}
+
+.deviceItem
+.deviceMainItem {
+    @apply flex flex-row  justify-between items-center w-full cursor-pointer rounded-full transition-all shadow-gray-400 shadow-sm hover:shadow-primary-hover;
+    /*hover:bg-green-200/30 hover:cursor-pointer*/
+}
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem {
+    @apply flex flex-row  justify-start items-center gap-4;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.iconItemWrapper {
+}
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.iconItem {
+    @apply flex p-2 items-start gap-[0.625rem] rounded-[123px] transition-all;
+}
+
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.iconItemActive {
+    @apply bg-primary;
+    box-shadow: 0px 0px 0px 2px #a7ffc7;
+}
+
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.iconItemDeactive {
+    @apply bg-gray-400;
+}
+
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.textItem {
+    @apply flex flex-col;
+}
+
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.textItem
+.name {
+    @apply text-gray-900 text-sm font-medium truncate max-w-[6rem] min-w-0;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.textItem
+.state {
+    @apply text-right text-xs font-extralight leading-[0.875rem];
+}
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.textItem
+.stateOnline {
+    @apply text-theme-success;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.textItem
+.stateOffline {
+    @apply text-theme-danger;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceRightItem
+.textItem
+.stateNone {
+    @apply text-text-body;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceCenterItem {
+    @apply !cursor-default;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceCenterItem
+.iconItem {
+    @apply w-[40px] h-[40px];
+}
+
+.deviceItem
+.deviceMainItem
+.deviceLeftItem {
+    @apply flex flex-row gap-1 me-2;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceLeftItem
+.iconItem {
+    @apply w-[16px] h-[16px];
+}
+
+.deviceItem
+.deviceMainItem
+.deviceLeftItem
+.trackingButton {
+    @apply w-[20px] h-[20px] p-0 border-none bg-transparent cursor-pointer rounded transition-all;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceLeftItem
+.trackingButton
+.trackingIcon {
+    @apply w-[16px] h-[16px] transition-all;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceLeftItem
+.trackingButton.trackingActive {
+}
+
+.deviceItem
+.deviceMainItem
+.deviceLeftItem
+.trackingButton.trackingInactive {
+    @apply opacity-60;
+}
+
+.deviceItem
+.deviceMainItem
+.deviceLeftItem
+.trackingButton.trackingInactive:hover {
+    @apply opacity-100;
+}
+

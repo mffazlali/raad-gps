@@ -1,0 +1,34 @@
+/*@import "./tailwind.css";*/
+@import "ag-grid-community/styles/ag-theme-quartz.css";
+@import "ag-grid-community/styles/ag-theme-balham.css";
+@import "ag-grid-community/styles/ag-theme-material.css";
+@import "ag-grid-community/styles/ag-theme-alpine.css";
+
+.ag-theme-quartz, .ag-theme-balham, .ag-theme-material, .ag-theme-alpine {
+    --ag-border-radius: 8px !important;
+    --ag-selected-row-background-color: transparent !important;
+    --ag-borders: none !important;
+    --ag-header-background-color: var(--color-gray-100) !important;
+    --ag-grid-size: 5px !important;
+    --ag-list-item-height: 20px !important;
+    /*--ag-row-hover-color: var(--raad-color-primary-hover) !important;*/
+
+
+}
+
+.ag-theme-quartz, .ag-theme-balham, .ag-theme-material, .ag-theme-alpine {
+    --ag-column-select-indent-size: 40px
+}
+
+:is(.ag-theme-quartz,.ag-theme-balham, .ag-theme-material, .ag-theme-alpine) .ag-column-drop-cell {
+    background-color: purple;
+}
+
+:is(.ag-theme-quartz,.ag-theme-balham, .ag-theme-material, .ag-theme-alpine) .ag-column-drop-cell .ag-icon {
+    color: white;
+}
+
+:is(.ag-theme-quartz,.ag-theme-balham, .ag-theme-material, .ag-theme-alpine) .ag-column-drop-cell-text {
+    color: white;
+    font-weight: bold;
+}

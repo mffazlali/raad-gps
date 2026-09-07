@@ -1,0 +1,45 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.mobileHeader {
+    @apply relative w-full  z-[10000000000000]
+}
+
+.mobileHeader .mobileHeaderContainer {
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems {
+    @apply flex py-2 px-1 items-center justify-between gap-4 bg-gray-white;
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .screenItemWrapper {
+    @apply flex w-[24px] h-[24px] p-[2px] items-start gap-[10px] shrink-0 rounded-[4px] bg-theme-light shadow-[2px_2px_15px_0px_rgba(0,0,0,0.15)];
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .screenItemWrapper .screenItem {
+    @apply w-[20px] h-[20px];
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .searchItemWrapper {
+    @apply w-full;
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .searchItemWrapper .searchItem {
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .userItemWrapper {
+    @apply flex w-[24px] h-[24px] p-[2px] items-start gap-[10px] shrink-0 rounded-[4px] bg-theme-light shadow-[2px_2px_15px_0px_rgba(0,0,0,0.15)];
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .userItemWrapper .userItem {
+    @apply w-[20px] h-[20px];
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .logoutItemWrapper {
+    @apply flex w-[24px] h-[24px] p-[2px] items-start gap-[10px] shrink-0 rounded-[4px] bg-theme-light shadow-[2px_2px_15px_0px_rgba(0,0,0,0.15)];
+}
+
+.mobileHeader .mobileHeaderContainer .mobileHeaderItems .logoutItemWrapper .logoutItem {
+    @apply w-[20px] h-[20px];
+}
+
+

@@ -1,0 +1,207 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.sidebar {
+    @apply h-full flex-shrink-0 relative transition-all overflow-ellipsis duration-500 z-50 select-none;
+    /*transition-timing-function: cubic-bezier();*/
+}
+
+.sidebarSmall {
+    @apply !w-[112px];
+}
+
+.sidebarLarge {
+    @apply !w-[242px];
+}
+
+.sidebar .arrowLeftToggle {
+    @apply absolute left-0 top-[30px] rounded-l-[16px] z-50 shadow-[-4px_0px_5px_0px_rgba(0,0,0,0.15)];
+}
+
+
+.sidebar
+.arrowLeftToggle
+.arrowLeftWrapper {
+    @apply flex w-[18px] h-[40px] py-3 flex-col justify-center items-center flex-shrink-0 bg-gray-100 rounded-l-[16px];
+}
+
+
+.sidebar
+.arrowLeftToggle
+.arrowLeftWrapper
+.arrowLeft {
+    @apply w-[18px] h-[18px] hover:scale-[1.1] transition-all;
+}
+
+.sidebar .sidebarDetailWrapper {
+    @apply overflow-x-hidden flex justify-center w-[96px] min-h-full max-h-[100dvh] overflow-y-hidden flex-shrink-0 relative rounded-l-[15px] bg-gray-100 transition-[width] duration-500;
+    box-shadow: -4px 0px 5px 0px rgba(0, 0, 0, 0.15);
+    direction: ltr;
+}
+
+.sidebar .sidebarDetailWrapperSmall {
+    @apply w-[96px];
+}
+
+.sidebar .sidebarDetailWrapperLarge {
+    @apply w-[226px];
+}
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail {
+    direction: ltr;
+    @apply mx-auto w-full overflow-y-auto flex flex-col justify-start items-center pt-12 h-full max-h-[calc(100vh-30px)] relative;
+}
+
+.sidebar .sidebarDetailWrapper .sidebarDetail .logoWrapper {
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.logoWrapper
+.logo {
+    @apply inline-flex flex-row  justify-center items-start gap-4;
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.logoWrapper
+.logo
+.logoIconWrapper {
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.logoWrapper
+.logo
+.logoIconWrapper
+.logoIcon {
+    @apply w-[27.571px] h-[32px];
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.logoWrapper
+.logo
+.logoIconRaadWrapper {
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.logoWrapper
+.logo
+.logoIconRaadWrapper
+.logoIconRaad {
+    @apply w-[31.429px] h-[32px];
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.topItemsWrapper {
+    @apply pt-28;
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.itemsWrapper {
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.itemsWrapper
+.items {
+    @apply flex flex-col justify-start gap-14;
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.itemsWrapper
+.items
+.item {
+    @apply flex flex-row  justify-start items-center gap-4;
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.itemsWrapper
+.items
+.item
+.iconWrapper {
+    @apply flex w-[40px] h-[40px] p-2 gap-[0.630rem];
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.itemsWrapper
+.items
+.item
+.iconWrapper
+.icon {
+    @apply w-[24px] h-[24px];
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.labelWrapperShow {
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.labelWrapperHidden {
+    @apply hidden;
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.itemsWrapper
+.items
+.item
+.labelWrapper {
+}
+
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.itemsWrapper
+.items
+.item
+.labelWrapper
+.label {
+    @apply text-text-body text-right font-semibold leading-6;
+}
+
+.sidebar
+.sidebarDetailWrapper
+.sidebarDetail
+.bottomItemsWrapper {
+    @apply mt-auto pb-11 pt-64;
+}

@@ -1,0 +1,3 @@
+.actionsWrapper {
+  @apply flex items-center justify-start p-4 bg-white rounded-lg shadow-sm border-t border-gray-100 mt-auto;
+}

@@ -1,0 +1,34 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.mobileFooter {
+    @apply relative w-full z-[3000];
+}
+
+.mobileFooter .mobileFooterContainer {
+   @apply fixed bottom-0 w-full;
+}
+
+.mobileFooter .mobileFooterContainer .mobileFooterItems {
+    @apply flex py-2 px-8 items-center justify-between gap-4 bg-theme-light;
+}
+
+.mobileFooter .mobileFooterContainer .mobileFooterItems .iconItemWrapper {
+    @apply flex h-[40px] px-[8px] items-start gap-[10px] rounded-[4px] bg-theme-light;
+}
+
+.mobileFooter .mobileFooterContainer .mobileFooterItems .iconItemWrapper .iconItem {
+    @apply flex flex-col justify-center items-center;
+}
+
+.mobileFooter .mobileFooterContainer .mobileFooterItems .iconItemWrapper .iconItem .icon {
+    @apply w-[24px] h-[24px];
+}
+
+.mobileFooter .mobileFooterContainer .mobileFooterItems .iconItemWrapper .iconItem .labelWrapper {
+}
+
+.mobileFooter .mobileFooterContainer .mobileFooterItems .iconItemWrapper .iconItem .labelWrapper .label {
+    @apply text-text-body text-right font-semibold leading-6;
+}
+
+

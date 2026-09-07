@@ -1,0 +1,46 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.deviceListTabsWrapper {
+    @apply relative w-full;
+}
+
+.deviceListTabsWrapper
+.deviceListTabs {
+    @apply w-full flex flex-row  justify-center items-center bg-hitBox;
+}
+
+.deviceListTabsWrapper
+.deviceListTabs
+.tab {
+    @apply box-border w-4/12 flex justify-center items-center gap-1 flex-[1_0_0] px-[8px] py-[16px] rounded-t-[4px] rounded-r-[4px] rounded-b-[0] rounded-l-[0] transition-all;
+}
+
+.deviceListTabsWrapper
+.deviceListTabs
+.tabActive {
+    @apply border-solid border-t-[1px] border-t-gray-300 border-x-[1px] border-x-gray-300 bg-gray-white border-b-[1px] border-b-transparent;
+}
+
+.deviceListTabsWrapper
+.deviceListTabs
+.tabInactive {
+    @apply border-solid border-b-[1px] border-b-gray-300 bg-hitBox border-t-[1px] border-t-hitBox border-x-[1px] border-x-hitBox;
+}
+
+.deviceListTabsWrapper
+.deviceListTabs
+.tabLabel {
+    @apply text-center text-xs  font-normal leading-[1.125rem] transition-all;
+}
+
+.deviceListTabsWrapper
+.deviceListTabs
+.tabLabelActive {
+    @apply text-gray-700;
+}
+
+.deviceListTabsWrapper
+.deviceListTabs
+.tabLabelInactive {
+    @apply text-theme-secondary;
+}

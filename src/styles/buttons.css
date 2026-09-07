@@ -1,0 +1,37 @@
+/*@import "./tailwind.css";*/
+
+.btn-primary {
+    @apply !outline-none select-none bg-primary disabled:!bg-primary-disable disabled:!text-gray-100 enabled:!text-white enabled:hover:bg-primary-hover active:!bg-primary-active border-2 disabled:!border-primary-disable enabled:!border-primary enabled:hover:!border-primary-hover active:!border-primary-active relative overflow-hidden;
+}
+
+.btn-primary::after {
+    @apply content-[''] absolute w-4 h-4 bg-white/30 rounded-full -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-300;
+}
+
+.btn-primary:active::after {
+    @apply enabled:scale-[10] enabled:opacity-0;
+}
+
+.btn-primary-outline {
+    @apply box-border border-solid select-none disabled:border-primary-disable disabled:text-primary-disable enabled:hover:!border-primary-hover enabled:active:!border-primary-active enabled:!border-primary border-2 relative overflow-hidden;
+}
+
+.btn-primary-outline::after {
+    @apply content-[''] absolute w-4 h-4 bg-primary opacity-30 rounded-full -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-300;
+}
+
+.btn-primary-outline:active::after {
+    @apply enabled:scale-[10] enabled:opacity-0;
+}
+
+.btn-danger {
+    @apply !outline-none select-none bg-red-600 disabled:!bg-red-400 disabled:!text-gray-100 enabled:!text-white enabled:hover:bg-red-700 active:!bg-red-800 border-2 disabled:!border-red-400 enabled:!border-red-600 enabled:hover:!border-red-700 active:!border-red-800 relative overflow-hidden;
+}
+
+.btn-danger::after {
+    @apply content-[''] absolute w-4 h-4 bg-white/30 rounded-full -translate-x-1/2 -translate-y-1/2 scale-0 transition-transform duration-300;
+}
+
+.btn-danger:active::after {
+    @apply enabled:scale-[10] enabled:opacity-0;
+}

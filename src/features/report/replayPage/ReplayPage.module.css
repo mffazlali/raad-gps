@@ -1,0 +1,104 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.replayPage {
+    @apply relative sm:w-full sm:h-full h-[calc(100%-44px)] sm:bg-transparent bg-theme-light sm:shadow-none shadow shadow-primary;
+}
+
+.replayPage .replayPageContainer {
+    @apply sm:relative sm:w-full sm:h-full sm:flex sm:overflow-hidden h-full flex flex-col dir-ltr;
+}
+
+.replayPage .replayPageContainer .sidebar {
+    @apply sm:!w-[350px] w-full;
+}
+
+.replayPage .replayPageContainer .contentWrapper {
+    @apply w-full h-full fixed overflow-y-auto overflow-x-hidden sm:w-[calc(100%-350px)];
+}
+
+.replayPage .replayPageContainer .contentWrapper .content {
+    @apply sm:relative w-full max-h-[100%] h-full sm:min-h-[500px];
+    /*width: calc(100% - 350px);*/
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .mapWrapper {
+    @apply relative sm:h-auto h-[60%] w-full overflow-auto;
+}
+
+.replayPage .replayPageContainer .dateTypeActionsWrapper{
+    @apply relative sm:w-[calc(100%-350px)] w-full pb-1 sm:text-base text-[0.5rem];
+}
+
+.replayPage .replayPageContainer .dateTypeActionsWrapper .dateTypeActions{
+    @apply flex w-full justify-center gap-1 items-start flex-wrap;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper {
+    @apply absolute w-[100%] sm:h-auto h-[157px] sm:bottom-3 bottom-0 z-[100] flex justify-center;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report {
+    @apply relative sm:w-[65%] w-full;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .action {
+    @apply bg-gray-200 w-full flex justify-between;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .action .closeButton {
+    @apply text-theme-danger hover:text-theme-danger-hover active:text-theme-danger-active;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .action .headerTitle {
+    @apply flex justify-end items-start text-black gap-4 px-4 pt-1;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card {
+    @apply relative flex sm:py-4 py-0 sm:px-10 px-2 flex-col items-start gap-2 w-full bg-gray-100 rounded-[1tpx] backdrop-blur-[1px];
+}
+
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportHeaderWrapper {
+    @apply w-full;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportHeaderWrapper .reportHeader {
+    @apply flex w-full justify-between items-center self-stretch gap-7 pt-4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportHeaderWrapper .reportHeader .time {
+    @apply text-gray-700 text-right text-base font-medium;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportHeaderWrapper .reportHeader .title {
+    @apply text-gray-900 leading-[100%] text-2xl font-semibold;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportDivider {
+    @apply rounded-[20px] opacity-[0.4] bg-gray-900 w-full h-[2px];
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportContent {
+    @apply relative w-full;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportFooter {
+    @apply relative w-full;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportFooter .typesAction, .typesAction {
+    @apply flex w-full justify-start gap-2 items-start flex-wrap;
+}
+
+.replayPage .replayPageContainer .contentWrapper .content .reportWrapper .report .card .reportFooter .typesAction .typeButton, .typesAction .typeButton {
+    @apply flex h-[32px] justify-center items-center rounded-[8px];
+    /*box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);*/
+}
+
+
+
+

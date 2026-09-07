@@ -1,0 +1,111 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.notificationDevice {
+    @apply relative w-[100%] sm:h-full h-full;
+}
+
+.notificationDevice .notificationDeviceContainer {
+    @apply sm:w-full w-[100%] h-full m-auto rounded-[15px] relative;
+    /*@apply flex flex-col gap-[3px] pt-0 sm:px-4 px-0 h-[100%] relative justify-around;*/
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper {
+    @apply flex flex-col gap-[8px] h-[100%] relative justify-between pt-0 pb-4;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .notificationItems {
+    @apply max-h-[80vh] h-[90%] overflow-auto flex flex-col gap-4 mt-4;
+    direction: ltr;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .notificationItems .notificationItemEmpty {
+    @apply flex justify-center items-center h-full;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .notificationItems .notificationItem {
+    @apply flex flex-col flex-wrap gap-y-4 rounded-[10px] bg-gray-100 w-[90%] h-auto max-h-[150px] shadow-sm shadow-primary self-center px-3 py-4;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .notificationItems .notificationItem .messageItem {
+    @apply w-full;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .notificationItems .notificationItem .messageItem .message {
+    @apply text-black text-base font-medium leading-none;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .notificationItems .notificationItem .eventTimeItem {
+    @apply flex flex-row  justify-end w-full;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .notificationItems .notificationItem .eventTimeItem .eventTime {
+    @apply text-gray-900 text-sm font-semibold leading-3;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper, .notificationDevice .notificationDeviceContainer .actionWrapper {
+    @apply relative w-full h-[6%] px-1;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions, .notificationDevice .notificationDeviceContainer .actionWrapper .action {
+    @apply flex justify-around w-full relative sm:px-4 px-0 gap-1;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions .button {
+    @apply w-[48%];
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionWrapper .action {
+    @apply flex justify-start gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .action .button {
+    @apply w-[48%];
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions .button .label, .settings .settingsContainer .form .actionWrapper .action .button .label {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions .cancelButton, .settings .settingsContainer .form .actionWrapper .action .cancelButton {
+    @apply text-primary disabled:!text-primary-disable hover:!text-primary active:!text-primary-active;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions .cancelButton .cancelLabel, .settings .settingsContainer .form .actionWrapper .action .cancelButton .cancelLabel {
+    @apply text-primary;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions .DeleteButton {
+    @apply bg-red-500;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions .DeleteButton .deleteLabel {
+    @apply text-white;
+}
+
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actionsWrapper .actions .registerButton {
+    @apply bg-primary;
+}
+
+.notificationDevice .notificationDeviceContainer .notificationDeviceWrapper .actions .registerButton .registerLabel {
+    @apply text-white;
+}
+
+
+/*.settingsRegister {*/
+/*    @apply relative w-[100%] h-full;*/
+/*}*/
+
+/*.settingsRegister .settingsRegisterContainer {*/
+/*    @apply sm:w-full w-[100%] h-full m-auto rounded-[15px] bg-[rgba(255,255,255,0.85)] mx-auto relative backdrop-blur-[18.200000762939453px];*/
+/*}*/
+
+
+/*.settingsRegister .settingsRegisterContainer .form {*/
+/*    @apply flex flex-col sm:gap-[1.825rem] gap-[15px] pt-4 sm:px-4 px-0 sm:h-auto h-full relative;*/
+/*}*/
+
+
+
+
+

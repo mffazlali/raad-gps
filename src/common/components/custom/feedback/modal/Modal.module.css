@@ -1,0 +1,194 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.modal {
+    @apply w-full;
+}
+
+.modalPage {
+    @apply flex justify-center items-center py-3 absolute top-0 left-0 w-full sm:h-full h-[89vh] sm:z-[1000000];
+    /*height: calc((100vh));*/
+}
+
+.modalTab {
+    @apply absolute left-0 top-0 h-full;
+    /*height: calc((100vh + 6rem));*/
+}
+
+.modalMobileContent {
+    @apply absolute top-0 left-0 w-full sm:h-full h-[89vh] z-[99];
+    /*height: calc((100vh));*/
+}
+
+.modalMobileContentPopup {
+    @apply absolute pt-[44px] top-0 left-0 w-full h-[100%] z-[106] flex justify-center items-center;
+}
+
+.modalMobileTab {
+    @apply absolute left-0 top-[44px] z-[100];
+}
+
+.modal .modalContainer {
+    /*@apply py-5;*/
+}
+
+.modal .modalContainerPage {
+    @apply absolute w-[100%] h-full flex justify-center sm:items-center items-end sm:overflow-auto overflow-hidden cursor-default
+}
+
+.modal .modalMobileTab .modalContainerMobileTab {
+    @apply relative w-screen cursor-default top-[7%] h-[calc(100vh-94px)] z-[99]
+}
+
+.modal .modalContainerMobilePopup {
+    @apply relative bg-[rgba(255,255,255,0.85)] rounded-[15px] px-1 py-2 w-[80%] flex justify-center items-center cursor-default h-[80%];
+}
+
+.modal .modalContainerMobileContent {
+    @apply relative w-screen cursor-default top-[0] h-[calc(100vh-50px)]
+}
+
+.modal .modalContainerTab {
+    @apply relative h-full flex justify-center sm:items-center items-end overflow-auto;
+}
+
+.modal .modalContainer .modalWrapper {
+    @apply sm:px-4 px-0 pt-4 flex flex-col gap-4 rounded-[15px] bg-[rgba(255,255,255,0.85)] relative sm:m-auto m-0  sm:cursor-default cursor-default sm:w-screen w-full h-full min-h-[fit-content] max-h-[95%] transition-all duration-300;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.modal .modalContainer .modalWrapperTab {
+    @apply sm:px-4 px-0 pt-4 flex flex-col gap-4 max-h-[95%] rounded-[15px] bg-[rgba(255,255,255,0.85)] relative sm:m-auto m-0  sm:cursor-default cursor-default sm:w-screen w-full sm:h-[100dvh] h-full min-h-[fit-content] transition-all duration-300;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.modal .modalContainer .modalWrapperMobile {
+    @apply relative sm:m-auto cursor-default sm:w-screen w-screen sm:h-auto h-full transition-all duration-300;
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.backdrop {
+    @apply sm:bg-black/30  bg-black/60 fixed left-0 top-0 w-full h-[100dvh] z-[4500] backdrop-blur-sm sm:-ms-8;
+}
+
+.backdropMobileTab {
+    @apply sm:bg-black/30  bg-black/60 fixed top-0 w-full h-[calc(100%-56px)] z-[98] backdrop-blur-sm sm:-ms-8;
+}
+
+.backdropMobileContentPopup {
+    @apply sm:bg-black/30  bg-black/60 fixed top-[44px] left-0 w-full h-[calc(100%-100px)] z-[105] backdrop-blur-sm sm:-ms-8;
+}
+
+.backdropMobileContent {
+    @apply bg-black/30 fixed sm:top-0 top-[7%] left-0 w-full sm:h-[100dvh] h-[calc(100vh-94rem)] z-[1500];
+}
+
+.modal .modalContainer .modalShow {
+    @apply sm:animate-[show] animate-[mobileTop];
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.modal .modalContainer .modalHide {
+    @apply sm:animate-[hide] animate-[mobileBottom];
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.modal .modalContainer .modalShowMobileTab {
+    @apply sm:animate-[show] animate-[mobileTop];
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.modal .modalContainer .modalHideMobileTab {
+    @apply sm:animate-[hide] animate-[mobileBottom];
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.modal .modalContainer .modalShowMobileContent {
+    @apply sm:animate-[show];
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.modal .modalContainer .modalHideMobileContent {
+    @apply sm:animate-[hide];
+    animation-duration: 0.2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes mobileTop {
+    from {
+        margin-top: -5vh;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+@keyframes mobileBottom {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: -5vh;
+    }
+}

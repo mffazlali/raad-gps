@@ -1,0 +1,74 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.devicesReport {
+  @apply bg-gray-100 w-[350px] h-full overflow-hidden rounded-[10px] absolute top-0 right-2 z-50 transition-all select-none;
+  /*opacity: 0;*/
+  /*animation-name: opacityAnimate;*/
+  /*animation-duration: 0.5s;*/
+  /*animation-timing-function: ease;*/
+  /*animation-delay: 0s;*/
+  /*animation-iteration-count: inherit;*/
+  /*animation-direction: normal;*/
+  /*animation-fill-mode: forwards;*/
+}
+
+.devicesReport .devicesReportContainer {
+  @apply w-[95%] h-[100dvh] relative pt-10 ps-16;
+}
+
+.devicesReport .devicesReportContainer .devicesReportHeaderWrapper {
+}
+
+.devicesReport .devicesReportContainer .devicesReportHeaderWrapper .devicesReportHeader {
+  @apply flex flex-col gap-2 cursor-move h-[65px];
+}
+
+.devicesReport
+  .devicesReportContainer
+  .devicesReportHeaderWrapper
+  .devicesReportHeader
+  .title {
+  @apply text-black text-right text-base font-semibold leading-6 select-none;
+}
+
+.devicesReport
+  .devicesReportContainer
+  .devicesReportHeaderWrapper
+  .devicesReportHeader
+  .subTitle {
+  @apply text-black text-xs font-light leading-6 select-none;
+}
+
+.devicesReport
+  .devicesReportContainer
+  .devicesReportHeaderWrapper
+  .devicesReportHeader
+  .line {
+  @apply w-full h-auto stroke-[1px] stroke-gray-300 mx-auto -mt-1;
+}
+
+.devicesReport .devicesReportContainer .devicesReportContentWrapper {
+  @apply w-full h-[calc(100%-65px)] relative pt-3;
+}
+
+.devicesReport .devicesReportContainer .devicesReportContentWrapper .devicesReportContent {
+  @apply inline-flex flex-col items-start gap-8 w-full h-full relative;
+}
+
+.devicesReport
+  .devicesReportContainer
+  .devicesReportContentWrapper
+  .devicesReportContent
+  .devicesReportItemsWrapper {
+  @apply flex flex-col justify-start gap-4 w-[102%] px-[2%] h-[98%] overflow-auto relative;
+}
+
+@keyframes opacityAnimate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+

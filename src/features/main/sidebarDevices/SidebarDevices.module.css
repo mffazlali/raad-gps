@@ -1,0 +1,195 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.deviceList {
+    @apply bg-gray-100 md:w-[350px] sm:w-[280px] h-full overflow-hidden rounded-[10px] absolute top-0 right-2 z-50 transition-all select-none;
+
+    /*opacity: 0;*/
+    /*animation-name: opacityAnimate;*/
+    /*animation-duration: 0.5s;*/
+    /*animation-timing-function: ease;*/
+    /*animation-delay: 0s;*/
+    /*animation-iteration-count: inherit;*/
+    /*animation-direction: normal;*/
+    /*animation-fill-mode: forwards;*/
+}
+
+.deviceList .deviceListContainer {
+    @apply w-[95%] h-full relative pt-10 ps-16;
+}
+
+.deviceList .deviceListContainer .deviceListHeaderWrapper {
+}
+
+.deviceList .deviceListContainer .deviceListHeaderWrapper .deviceListHeader {
+    @apply flex flex-col gap-2 cursor-move;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListHeaderWrapper
+.deviceListHeader
+.title {
+    @apply text-black text-right text-base leading-6 select-none font-semibold;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListHeaderWrapper
+.deviceListHeader
+.line {
+    @apply w-full h-auto stroke-[1px] stroke-gray-300 mx-auto;
+}
+
+.deviceList .deviceListContainer .deviceListContentWrapper {
+    @apply w-full h-full relative;
+}
+
+.deviceList .deviceListContainer .deviceListContentWrapper .deviceListContent {
+    @apply inline-flex flex-col items-start gap-2 w-full h-full relative;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListToolbarWrapper {
+    @apply mt-3 w-full;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListToolbarWrapper
+.deviceListToolbar {
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper {
+    @apply relative w-full;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper
+.deviceListTabs {
+    @apply w-full flex flex-row  justify-center items-center bg-hitBox;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper
+.deviceListTabs
+.tab {
+    @apply box-border w-4/12 flex justify-center items-center gap-1 flex-[1_0_0] px-[8px] py-[16px] rounded-t-[4px] rounded-r-[4px] rounded-b-[0] rounded-l-[0] transition-all;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper
+.deviceListTabs
+.tabActive {
+    @apply border-solid border-t-[1px] border-t-gray-300 border-x-[1px] border-x-gray-300 bg-gray-white border-b-[1px] border-b-gray-white;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper
+.deviceListTabs
+.tabInactive {
+    @apply border-solid border-b-[1px] border-b-gray-300 bg-hitBox border-t-[1px] border-t-hitBox border-x-[1px] border-x-hitBox;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper
+.deviceListTabs
+.tabLabel {
+    @apply text-center text-xs  font-normal leading-[1.125rem] transition-all;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper
+.deviceListTabs
+.tabLabelActive {
+    @apply text-gray-700;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListTabsWrapper
+.deviceListTabs
+.tabLabelInactive {
+    @apply text-theme-secondary;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.deviceListItemsWrapper {
+    @apply flex flex-col justify-start gap-4 w-[100%] px-[2%] h-[100%] overflow-auto relative;
+    direction: ltr;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.buttonWrapper {
+    @apply flex py-[0.375rem] px-3 justify-center items-center gap-2 self-stretch rounded-[4px] w-full;
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.buttonWrapper
+.icon {
+    @apply w-[16px] h-[16px];
+}
+
+.deviceList
+.deviceListContainer
+.deviceListContentWrapper
+.deviceListContent
+.buttonWrapper
+.text {
+    @apply text-white text-center text-sm font-normal leading-5;
+}
+
+.deviceList .deviceListContainer .deviceListContentWrapper .deviceListContent .deviceListItemsAction {
+    @apply relative w-full h-full flex flex-col items-start;
+}
+
+.deviceList .deviceListContainer .deviceListContentWrapper .deviceListContent .deviceListItemsAction .deviceListAction {
+    @apply absolute w-full bottom-[160px];
+}
+
+@keyframes opacityAnimate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

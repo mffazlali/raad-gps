@@ -1,0 +1,72 @@
+.controls {
+    @apply w-full flex flex-col gap-4 ;
+}
+
+.timeline {
+    @apply w-full px-4;
+}
+
+.slider {
+    @apply !mb-0;
+}
+
+.buttons {
+    @apply flex items-center justify-between gap-4 px-4;
+}
+
+.mainControls {
+    @apply flex items-center gap-4;
+}
+
+.controlButton {
+    @apply w-10 h-10 flex items-center justify-center rounded-full
+           bg-gray-100 hover:bg-gray-200 active:bg-gray-300
+           disabled:opacity-50 disabled:cursor-not-allowed
+           transition-all duration-200;
+}
+
+.speedControls {
+    @apply flex items-center;
+}
+
+.speedButtons {
+    @apply bg-gray-100 rounded-lg p-1;
+}
+
+.speedButtons :global(.ant-radio-button-wrapper) {
+    @apply !border-0 !bg-transparent !text-gray-600;
+}
+
+.speedButtons :global(.ant-radio-button-wrapper-checked) {
+    @apply !bg-primary !text-white;
+}
+
+.actionButtons {
+    @apply flex items-center gap-2;
+}
+
+.actionButton {
+    @apply flex items-center gap-2 px-4 py-2 rounded-lg
+           bg-gray-100 hover:bg-gray-200 active:bg-gray-300
+           disabled:opacity-50 disabled:cursor-not-allowed
+           transition-all duration-200;
+}
+
+/* Mobile Styles */
+@media (max-width: 640px) {
+    .buttons {
+        @apply flex-col gap-2;
+    }
+
+    .mainControls {
+        @apply w-full justify-center;
+    }
+
+    .speedControls {
+        @apply w-full justify-center;
+    }
+
+    .actionButtons {
+        @apply w-full justify-center;
+    }
+}

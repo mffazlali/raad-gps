@@ -1,0 +1,37 @@
+.toolbar {
+  @apply absolute bg-white rounded-lg shadow-md w-full;
+  transition: all 0.3s ease;
+}
+
+.toolbar.minimized {
+  @apply h-auto !top-0;
+}
+
+.toolbar .header {
+  @apply flex justify-between items-center p-3 cursor-move;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.toolbar .header .title {
+  @apply flex flex-col gap-1;
+}
+
+.toolbar .header .title .time {
+  @apply text-sm text-gray-600;
+}
+
+.toolbar .header .title .deviceName {
+  @apply text-base font-medium text-gray-900 truncate max-w-[200px];
+}
+
+.toolbar .header .actions {
+  @apply flex gap-2;
+}
+
+.toolbar .header .actions .actionButton {
+  @apply p-1 text-gray-500 hover:text-gray-700 transition-colors;
+}
+
+.toolbar .content {
+  @apply p-3;
+}

@@ -1,0 +1,212 @@
+/*@import "../../styles/tailwind.css";*/
+
+.settings {
+    @apply relative w-full h-full
+}
+
+.settings .settingsContainer {
+    @apply flex flex-col gap-0 relative w-full h-full min-h-[400px];
+}
+
+.settings .settingsContainer .rowWrapper {
+    @apply flex flex-row  gap-1 h-full overflow-hidden;
+}
+
+.settings .settingsContainer .rowWrapper {
+    @apply flex flex-row  gap-1 h-[98%];
+}
+
+
+.settings .settingsContainer .rowWrapper .mapWrapper {
+    @apply w-[65%] h-full;
+}
+
+.settings .settingsContainer .rowWrapper .gridWrapper {
+    @apply w-[35%] h-full;
+}
+
+.settings .settingsContainer .wrapperButtons {
+    @apply flex flex-row  gap-1;
+}
+
+.settings .settingsContainer .button {
+    @apply w-[fit-content];
+}
+
+.settings .settingsContainer .text {
+    @apply text-white text-center text-sm font-normal leading-5;
+}
+
+.settings .settingsContainer .form {
+    @apply flex flex-col gap-[3px] pt-0 sm:px-4 px-0 h-[100%] relative justify-around;
+}
+
+.settings .settingsContainer .form .inputsWrapper {
+    @apply h-[88%] flex flex-col gap-4 scroll-smooth;
+    direction: ltr;
+}
+
+.settings .settingsContainer .form .inputsWrapper .inputs, .inputsSettings{
+    @apply flex flex-col flex-wrap gap-y-4 w-full;
+}
+
+
+.settings .settingsContainer .form .inputsWrapper .inputs .inputButton {
+    @apply w-auto bg-primary text-white;
+}
+
+.settings .settingsContainer .form .inputsWrapper .inputs > .input {
+    @apply px-2 box-border;
+}
+
+.settings .settingsContainer .form .inputsWrapper .inputs .inputWrapper {
+    @apply flex flex-row  gap-2 box-border px-2;
+}
+
+.settings .settingsContainer .form .inputsWrapper .inputs .inputWrapper > .input {
+    @apply box-border;
+}
+
+.settings .settingsContainer .form .inputsWrapper .inputs .input .button {
+    @apply text-primary hover:text-primary-hover active:text-primary-active font-semibold text-lg;
+}
+
+.settings .settingsContainer .form .actionsWrapper, .settings .settingsContainer .form .actionWrapper {
+    @apply relative w-full h-[8%];
+}
+
+.settings .settingsContainer .form .actionsWrapper .actions, .settings .settingsContainer .form .actionWrapper .action {
+    @apply flex justify-start w-full relative sm:px-4 px-4;
+}
+
+.settings .settingsContainer .form .actionsWrapper .actions .button {
+    @apply w-[48%];
+}
+
+.settings .settingsContainer .form .actionWrapper .action {
+    @apply flex justify-start gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.settings .settingsContainer .form .actionWrapper .action .button {
+    @apply w-[48%];
+}
+
+.settings .settingsContainer .form .actionsWrapper .actions .button .label, .settings .settingsContainer .form .actionWrapper .action .button .label {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.settings .settingsContainer .form .actionsWrapper .actions .cancelButton, .settings .settingsContainer .form .actionWrapper .action .cancelButton {
+    @apply border border-solid border-hitBox bg-hitBox;
+}
+
+.settings .settingsContainer .form .actionsWrapper .actions .cancelButton .cancelLabel, .settings .settingsContainer .form .actionWrapper .action .cancelButton .cancelLabel {
+    @apply text-primary;
+}
+
+.settings .settingsContainer .form .actionsWrapper .actions .registerButton {
+    @apply bg-primary;
+}
+
+.settings .settingsContainer .form .actionsWrapper .actions .registerButton .registerLabel {
+    @apply text-white;
+}
+
+.settingsRegister {
+    @apply relative w-[100%] h-full flex justify-center items-center;
+}
+
+.settingsRegister .settingsRegisterContainer {
+    @apply sm:w-full w-[100%] h-full relative;
+}
+
+
+.settingsRegister .settingsRegisterContainer .form {
+    @apply flex flex-col justify-between sm:gap-[1.825rem] gap-[15px] pt-4 sm:h-full h-auto relative m-auto rounded-[15px] mx-auto max-h-full;
+}
+
+.settingsRegister .settingsRegisterContainer .form .inputsWrapper {
+    @apply sm:max-h-[100dvh]  max-h-[85%] overflow-auto flex flex-col gap-4 sm:pb-[1rem] pb-[1rem];
+    direction: ltr;
+}
+
+.settingsRegister .settingsRegisterContainer .form .inputsWrapper .inputs {
+    @apply flex flex-col flex-wrap gap-y-4;
+}
+
+.settingsRegister .settingsRegisterContainer .form .inputsWrapper .inputs .inputWrapper {
+    @apply flex flex-row  gap-2 box-border;
+}
+
+.settingsRegister .settingsRegisterContainer .form .inputsWrapper .inputs .inputButton {
+    @apply w-auto bg-primary text-white;
+}
+
+.settingsRegister .settingsRegisterContainer .form .inputsWrapper .inputs .input {
+    @apply px-2 box-border;
+}
+
+.settingsRegister .settingsRegisterContainer .form .inputsWrapper .inputs .input .button {
+    @apply text-primary hover:text-primary-hover active:text-primary-active font-semibold text-lg;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper, .settingsRegister .settingsRegisterContainer .form .actionWrapper {
+    @apply relative w-full h-[100px] mt-7;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper .actions, .settingsRegister .settingsRegisterContainer .form .actionWrapper .action {
+    @apply flex justify-center gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper .actions .button {
+    @apply sm:w-[48%] w-[48%];
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionWrapper .action {
+    @apply flex justify-start gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionWrapper .action .button {
+    @apply w-[48%];
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper .actions .button .label, .settingsRegister .settingsRegisterContainer .form .actionWrapper .action .button .label {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper .actions .cancelButton, .settingsRegister .settingsRegisterContainer .form .actionWrapper .action .cancelButton {
+    @apply border border-solid border-hitBox bg-hitBox;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper .actions .cancelButton .cancelLabel, .settingsRegister .settingsRegisterContainer .form .actionWrapper .action .cancelButton .cancelLabel {
+    @apply text-primary;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper .actions .registerButton {
+    @apply bg-primary;
+}
+
+.settingsRegister .settingsRegisterContainer .form .actionsWrapper .actions .registerButton .registerLabel {
+    @apply text-white;
+}
+
+.actionsGrid {
+    @apply flex flex-row  gap-2;
+}
+
+.actionsGrid .editAction {
+    @apply text-primary hover:text-primary-hover active:text-primary-active font-semibold text-lg;
+}
+
+.actionsGrid .deleteAction {
+    @apply text-red-500 hover:text-red-600 active:text-red-700 font-semibold text-lg;
+}
+
+.actionsGrid .commandAction {
+    @apply text-gray-500 hover:text-gray-700 active:text-gray-800 font-semibold text-lg;
+}
+
+.actionsGrid .connectionsAction {
+    @apply text-gray-500 hover:text-gray-700 active:text-gray-800 font-semibold text-lg;
+}
+
+

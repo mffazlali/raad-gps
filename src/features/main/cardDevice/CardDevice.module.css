@@ -1,0 +1,419 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.deviceSpecsDetail {
+    opacity: 0;
+    animation-name: opacityAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    @apply rounded-[10px] bg-gray-100 sm:w-[270px] sm:h-[380px] shadow-sm shadow-primary sm:absolute sm:top-2.5 sm:left-14 z-[2] transition-all select-none sm:overflow-hidden relative w-full ;
+
+}
+
+.deviceSpecsDetail .deviceSpecsDetailContainer {
+    @apply relative bg-inherit h-full;
+
+}
+
+.deviceSpecsDetail .deviceSpecsDetailContainer .cardSpecsWrapper {
+    @apply h-full;
+}
+
+.deviceSpecsDetail .deviceSpecsDetailContainer .cardSpecsWrapper .cardSpecs {
+    @apply h-full;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper {
+    @apply relative sm:h-auto h-[40px];
+
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader {
+    @apply flex px-4 sm:pt-1 sm:pb-0 justify-between items-center sm:cursor-move;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.rightSpecsHeader {
+    @apply flex pe-4 justify-start items-center gap-2;
+}
+
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.rightSpecsHeader
+.iconWrapper {
+    @apply flex flex-row items-center;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.rightSpecsHeader
+.iconWrapper
+.icon {
+    @apply select-none cursor-default scale-[0.8];
+}
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.rightSpecsHeader
+.iconWrapper
+.batteryLabel {
+    @apply mr-1 text-[12px];
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.rightSpecsHeader
+.labelWrapper {
+    @apply mt-1 max-w-[80px] min-w-0 cursor-default;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.rightSpecsHeader
+.labelWrapper
+.label {
+    @apply text-gray-900 text-sm font-medium truncate block w-full;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.leftSpecsHeader {
+    @apply flex flex-row-reverse justify-between gap-2;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.editWrapper {
+    @apply flex py-1.5 px-0 w-[33px] h-[22px] justify-center items-center gap-2 self-center rounded-[4px] bg-hitBox;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.editWrapper
+.editIcon {
+    @apply hover:scale-[1.3] scale-[1.2]
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.leftSpecsHeader
+.trashWrapper {
+    @apply flex py-1.5 px-0 w-[33px] h-[22px] justify-center items-center gap-2 self-center rounded-[4px] bg-hitBox;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.trashWrapper
+.trashIcon {
+    @apply hover:scale-[0.8] scale-[0.7];
+}
+
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.leftSpecsHeader
+.gnssStatusWrapper {
+    @apply flex py-1.5 px-0 justify-center items-center;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.leftSpecsHeader
+.gnssStatusWrapper
+.gnssStatus {
+    @apply cursor-default scale-[0.8];
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.leftSpecsHeader
+.gsmSignalWrapper {
+    @apply flex p-1 gap-[1.5px] justify-center items-center;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.cardSpecsHeader
+.leftSpecsHeader
+.gsmSignalWrapper
+.gsmSignal {
+    @apply cursor-default scale-[0.6];
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.lineWrapper {
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsHeaderWrapper
+.lineWrapper
+.line {
+    @apply w-[90%] h-auto stroke-[1px] stroke-gray-300 mx-auto;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsContentWrapper {
+    @apply sm:h-[74%] sm:overflow-hidden sm:transform-none relative h-[calc(100%-70px)] overflow-visible transition-all;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsContentWrapper
+.cardSpecsContent {
+    @apply flex p-4 flex-col items-center gap-0 h-full;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsContentWrapper
+.cardSpecsContent
+.updateStatusWrapper {
+    @apply flex justify-center;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsContentWrapper
+.cardSpecsContent
+.updateStatusWrapper
+.updateStatus {
+    @apply text-theme-danger text-sm font-medium pb-0;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsContentWrapper
+.cardSpecsContent
+.cardSpecsList {
+    @apply flex flex-row  gap-4 pe-2 relative w-full h-full;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsContentWrapper
+.cardSpecsContent
+.addressWrapper {
+    @apply  h-[40px]
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsContentWrapper
+.cardSpecsContent
+.addressWrapper
+.address {
+    @apply text-sm font-medium text-black;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.cardSpecsActions {
+    @apply flex flex-col sm:absolute relative bottom-[5px] w-full sm:h-auto h-[25px];
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsOptions {
+    @apply relative w-[100%] flex flex-col gap-4 transition-[height] duration-300 overflow-auto;
+    direction: ltr;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsOptions
+.rowSpecsOptions {
+    @apply bg-inherit flex flex-row  justify-between self-stretch items-center w-full relative h-[25px] gap-2;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsOptions
+.rowSpecsOptions
+.rightSpecsOption {
+    @apply flex flex-row  items-center justify-end gap-4;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsOptions
+.rowSpecsOptions
+.rightSpecsOption
+.icon {
+    @apply w-[16px] h-[16px] select-none;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsOptions
+.rowSpecsOptions
+.rightSpecsOption
+.label {
+    @apply text-gray-900 text-right text-sm font-light leading-[0.90rem];
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsOptions
+.rowSpecsOptions
+.leftSpecsOption {
+    @apply w-[50%] relative flex-row  flex-grow-[1];
+    direction: ltr;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsOptions
+.rowSpecsOptions
+.leftSpecsOption
+.label {
+    @apply text-text-body text-right text-sm font-normal leading-[0.90rem];
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.colSpecsToolbar {
+    @apply flex flex-col justify-center items-center;
+}
+
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.rowSpecsToggleOptionWrapper {
+    @apply flex px-4 justify-center;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.rowSpecsToggleOptionWrapper
+.rowSpecsToggleOption {
+    @apply flex px-[0.38rem] w-[114px] h-[28px] justify-center items-center gap-2 self-stretch;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.rowSpecsToggleOption
+.icon {
+    @apply w-[16px] h-[16px] select-none;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.rowSpecsOthersOption {
+    @apply hidden sm:flex flex-row  justify-center items-center gap-2  ;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.rowSpecsOthersOption
+.specsOtherOption {
+    @apply flex justify-center items-center gap-2 self-stretch py-[0.38rem] px-3 w-[114px] h-[28px];
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.specsOtherOption
+.icon {
+    @apply w-[16px] h-[16px] select-none;
+}
+
+.deviceSpecsDetail
+.deviceSpecsDetailContainer
+.cardSpecsWrapper
+.specsOtherOption
+.iconMobile {
+    @apply w-[16px] h-[16px] scale-[1.2] select-none;
+}
+
+
+@keyframes opacityAnimate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

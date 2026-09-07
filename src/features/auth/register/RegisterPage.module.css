@@ -1,0 +1,125 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.registerPageForm {
+    @apply flex flex-col justify-center items-center gap-6;
+}
+
+.registerPageForm .subjectWrapper {
+}
+
+.registerPageForm .subjectWrapper .subject {
+    @apply flex flex-col justify-center items-center gap-4;
+}
+
+.registerPageForm .subjectWrapper .subject .logoWrapper {
+}
+
+.registerPageForm .subjectWrapper .subject .helpWrapper {
+    @apply sm:pt-12 pt-7;
+}
+
+.registerPageForm .subjectWrapper .subject .helpWrapper .help {
+    @apply text-gray-900 text-center text-3xl font-semibold leading-[2.4rem];
+}
+
+.registerPageForm .subjectWrapper .subject .sloganWrapper {
+    @apply pt-2;
+}
+
+.registerPageForm .subjectWrapper .subject .sloganWrapper .slogan {
+    @apply text-lg font-medium text-center text-gray-500 leading-7  sm:w-auto w-[300px];
+}
+
+.registerPageForm .subjectWrapper .subject .sloganWrapper .slogan .sloganError {
+    @apply text-[#980000];
+}
+
+.registerPageForm .formWrapper {
+}
+
+.registerPageForm .formWrapper .form {
+    @apply flex flex-col justify-center items-start sm:w-auto w-[300px];
+}
+
+.registerPageForm .formWrapper .form .groupWrapper {
+    @apply flex gap-4 flex-col relative w-full;
+}
+
+.registerPageForm .formWrapper .form .groupWrapper .group {
+    @apply flex flex-col;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.registerPageForm .formWrapper .form .groupWrapper .group .labelWrapper {
+}
+
+.registerPageForm .formWrapper .form .groupWrapper .group .labelWrapper .label {
+    @apply text-gray-800 text-right text-base font-medium leading-6;
+}
+
+.registerPageForm .formWrapper .form .groupWrapper .group .labelWrapper .labelSuccess {
+    @apply text-gray-800;
+}
+
+.registerPageForm .formWrapper .form .groupWrapper .group .labelWrapper .labelError {
+    @apply text-[#980000];
+}
+
+.registerPageForm
+.formWrapper
+.form
+.groupWrapper
+.group
+.labelWrapper
+.label
+span {
+    @apply text-[#980000];
+}
+
+.registerPageForm .formWrapper .form .groupWrapper .group .inputWrapper {
+    @apply flex lg:w-[358px] w-full gap-2 sm:h-[46px] h-[36px] px-[0.88rem] py-[0.65rem] rounded-[8px] border border-solid border-gray-200 bg-white;
+}
+
+.registerPageForm .formWrapper .form .groupWrapper .group .inputWrapper .input {
+    @apply text-gray-900 text-right text-base font-normal leading-6 w-full relative focus:!outline-none;
+}
+
+.registerPageForm .formWrapper .form .hintWrapper {
+    @apply flex flex-col justify-center items-start list-disc gap-[0.4rem] pt-4 ps-6;
+}
+
+.registerPageForm .formWrapper .form .hintWrapper .hint {
+    @apply text-right text-sm font-normal leading-[1.13rem];
+}
+
+.registerPageForm .formWrapper .form .hintWrapper .hintSuccess {
+    @apply text-[#518756];
+}
+
+.registerPageForm .formWrapper .form .hintWrapper .hintError {
+    @apply text-[#875555];
+}
+
+.registerPageForm .formWrapper .form .buttonWrapper {
+    @apply mt-8 relative w-full;
+}
+
+.registerPageForm .formWrapper .form .buttonWrapper .button {
+    @apply relative flex lg:w-[358px] w-full py-[6px] px-[12px] justify-center items-center gap-2 rounded-[4px] border border-solid border-theme-primary enabled:bg-primary-500 disabled:bg-gray-300;
+}
+
+.registerPageForm .formWrapper .form .buttonWrapper .button span {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.registerPageForm .forwardLinkWrapper {
+    @apply sm:relative absolute sm:bottom-0 bottom-5 sm:pt-4 pt-0 flex justify-center items-center;
+}
+
+.registerPageForm .forwardLinkWrapper .forwardLink {
+    @apply text-black text-center text-xs font-medium leading-[1.125rem];
+}
+
+.registerPageForm .forwardLinkWrapper .forwardLink span {
+    @apply text-primary-500;
+}

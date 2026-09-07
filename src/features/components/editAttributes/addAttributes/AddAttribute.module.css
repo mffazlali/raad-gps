@@ -1,0 +1,22 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.inputs {
+    @apply flex flex-col flex-wrap gap-y-4;
+}
+
+.inputs .input {
+    @apply px-2 box-border;
+}
+
+.inputs .input .inputButton {
+    @apply w-auto bg-primary;
+}
+
+.inputs .input .label {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.inputs .input .addButton {
+    @apply w-full bg-primary text-white;
+}
+

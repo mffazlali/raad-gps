@@ -1,0 +1,240 @@
+/*@import "../../styles/tailwind.css";*/
+
+.users {
+    @apply relative w-full h-full
+}
+
+.users .usersContainer {
+    @apply flex flex-col gap-0 relative w-full h-full min-h-[400px];
+}
+
+.users .usersContainer .rowWrapper {
+    @apply flex flex-row  gap-1 h-full overflow-hidden;
+}
+
+.users .usersContainer .rowWrapper {
+    @apply flex flex-row  gap-1 h-[98%];
+}
+
+
+.users .usersContainer .rowWrapper .mapWrapper {
+    @apply w-[65%] h-full;
+}
+
+.users .usersContainer .rowWrapper .gridWrapper {
+    @apply w-[35%] h-full;
+}
+
+.users .usersContainer .wrapperButtons {
+    @apply flex flex-row  gap-1;
+}
+
+.users .usersContainer .button, .usersRegister .usersRegisterContainer .button {
+    @apply bg-primary w-[fit-content];
+}
+
+.users .usersContainer .text, .usersRegister .usersRegisterContainer {
+    @apply text-white text-center text-sm font-normal leading-5;
+}
+
+.users .usersContainer .form {
+    @apply flex flex-col gap-[3px] pt-0 sm:px-4 px-0 h-[100%] relative justify-around;
+}
+
+.users .usersContainer .form .inputsWrapper {
+    @apply h-[88%] overflow-auto flex flex-col gap-4 scroll-smooth sm:pb-0 pb-[1rem];
+    direction: ltr;
+}
+
+.users .usersContainer .form .inputsWrapper .inputs {
+    @apply flex flex-col flex-wrap gap-y-4 w-full;
+}
+
+.users .usersContainer .form .inputsWrapper .inputs .inputButton {
+    @apply w-auto bg-primary text-white;
+}
+
+.users .usersContainer .form .inputsWrapper .inputs > .input {
+    @apply px-2 box-border;
+}
+
+.users .usersContainer .form .inputsWrapper .inputs .inputWrapper {
+    @apply flex flex-row  gap-2 box-border px-2;
+}
+
+.users .usersContainer .form .inputsWrapper .inputs .inputWrapper > .input {
+    @apply box-border;
+}
+
+.users .usersContainer .form .inputsWrapper .inputs .input .button {
+    @apply text-primary hover:text-primary-hover active:text-primary-active font-semibold text-lg;
+}
+
+.users .usersContainer .form .actionsWrapper, .users .usersContainer .form .actionWrapper {
+    @apply relative w-full h-[8%];
+}
+
+.users .usersContainer .form .actionsWrapper .actions, .users .usersContainer .form .actionWrapper .action {
+    @apply flex justify-start w-full relative sm:px-4 px-4;
+}
+
+.users .usersContainer .form .actionsWrapper .actions .button {
+    @apply w-[48%];
+}
+
+.users .usersContainer .form .actionWrapper .action {
+    @apply flex justify-start gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.users .usersContainer .form .actionWrapper .action .button {
+    @apply w-[48%];
+}
+
+.users .usersContainer .form .actionsWrapper .actions .button .label, .users .usersContainer .form .actionWrapper .action .button .label {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.users .usersContainer .form .actionsWrapper .actions .cancelButton, .users .usersContainer .form .actionWrapper .action .cancelButton {
+    @apply border-2 border-solid border-hitBox bg-hitBox;
+}
+
+.users .usersContainer .form .actionsWrapper .actions .cancelButton .cancelLabel, .users .usersContainer .form .actionWrapper .action .cancelButton .cancelLabel {
+    @apply text-primary;
+}
+
+.users .usersContainer .form .actionsWrapper .actions .registerButton {
+    @apply bg-primary;
+}
+
+.users .usersContainer .form .actionsWrapper .actions .registerButton .registerLabel {
+    @apply text-white;
+}
+
+.usersRegister {
+    @apply relative w-[100%] h-full flex justify-center items-center;
+}
+
+.usersRegister .usersRegisterContainer {
+    @apply sm:w-full w-[100%] h-full relative flex flex-col gap-4;
+}
+
+
+.usersRegister .usersRegisterContainer .form {
+    @apply flex justify-between flex-col sm:gap-[1.825rem] gap-[15px] w-full sm:h-full h-auto relative m-auto rounded-[15px] mx-auto max-h-full;
+}
+
+.usersRegister .usersRegisterContainer .form .inputsWrapper {
+    @apply sm:max-h-[97%]  max-h-[85%] overflow-auto flex flex-col gap-4 !text-right sm:pb-[1rem] pb-[1rem];
+    direction: ltr;
+}
+
+.usersRegister .usersRegisterContainer .form .inputsWrapper .inputs {
+    @apply flex flex-col flex-wrap gap-y-4;
+}
+
+.usersRegister .usersRegisterContainer .form .inputsWrapper .inputs .inputWrapper {
+    @apply flex flex-row  gap-2 box-border;
+}
+
+.usersRegister .usersRegisterContainer .form .inputsWrapper .inputs .inputButton {
+    @apply w-auto bg-primary text-white;
+}
+
+.usersRegister .usersRegisterContainer .form .inputsWrapper .inputs .input {
+    @apply px-2 box-border;
+}
+
+.usersRegister .usersRegisterContainer .form .hintWrapper {
+    @apply flex flex-col justify-center items-start list-disc gap-[0.4rem] pt-4 ps-6;
+}
+
+.usersRegister .usersRegisterContainer .form .hintWrapper .hint {
+    @apply text-right text-sm font-normal leading-[1.13rem];
+}
+
+.usersRegister .usersRegisterContainer .form .hintWrapper .hintSuccess {
+    @apply text-[#518756];
+}
+
+.usersRegister .usersRegisterContainer .form .hintWrapper .hintError {
+    @apply text-[#875555];
+}
+
+.usersRegister .usersRegisterContainer .form .inputsWrapper .inputs .input .button {
+    @apply text-primary hover:text-primary-hover active:text-primary-active font-semibold text-lg;
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper, .usersRegister .usersRegisterContainer .form .actionWrapper {
+    @apply relative w-full h-auto mt-7;
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper .actions, .usersRegister .usersRegisterContainer .form .actionWrapper .action {
+    @apply flex justify-center gap-4 w-full relative bottom-5 sm:px-4 px-4;
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper .actions .button {
+    @apply sm:w-[48%] w-[48%];
+}
+
+.usersRegister .usersRegisterContainer .form .actionWrapper .action {
+    @apply flex justify-start gap-4 w-full absolute bottom-5 sm:px-4 px-4;
+}
+
+.usersRegister .usersRegisterContainer .form .actionWrapper .action .button {
+    @apply w-[48%];
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper .actions .button .label, .usersRegister .usersRegisterContainer .form .actionWrapper .action .button .label {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper .actions .cancelButton, .usersRegister .usersRegisterContainer .form .actionWrapper .action .cancelButton {
+    @apply border border-solid border-hitBox bg-hitBox;
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper .actions .cancelButton .cancelLabel, .usersRegister .usersRegisterContainer .form .actionWrapper .action .cancelButton .cancelLabel {
+    @apply text-primary;
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper .actions .registerButton {
+    @apply bg-primary;
+}
+
+.usersRegister .usersRegisterContainer .form .actionsWrapper .actions .registerButton .registerLabel {
+    @apply text-white;
+}
+
+.usersRegister .usersRegisterContainer .gridWrapper {
+    @apply relative w-[100%] h-[400px];
+}
+
+.actionsGrid {
+    @apply flex flex-row  gap-2;
+}
+
+.actionsGrid .editAction {
+    @apply text-primary hover:text-primary-hover active:text-primary-active font-semibold text-lg;
+}
+
+.actionsGrid .changePasswordAction {
+    @apply text-yellow-700 hover:text-yellow-600 active:hover:text-yellow-500 font-semibold text-lg;
+}
+
+.actionsGrid .logsAction {
+    @apply text-gray-500 hover:text-gray-700 active:text-gray-800 font-semibold text-lg;
+}
+
+.actionsGrid .deleteAction {
+    @apply text-red-500 hover:text-red-600 active:text-red-700 font-semibold text-lg;
+}
+
+.actionsGrid .commandAction {
+    @apply text-gray-500 hover:text-gray-700 active:text-gray-800 font-semibold text-lg;
+}
+
+.actionsGrid .connectionsAction {
+    @apply text-gray-500 hover:text-gray-700 active:text-gray-800 font-semibold text-lg;
+}
+
+
+

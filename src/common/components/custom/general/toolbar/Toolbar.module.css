@@ -1,0 +1,3 @@
+.toolbar {
+  @apply flex items-center p-4 bg-white rounded-lg shadow-sm;
+} 

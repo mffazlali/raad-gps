@@ -1,0 +1,9 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.tabContent {
+    @apply lg:w-10/12 sm:w-9/12 h-full shrink-0 bg-[#F8F9FA];
+}
+
+.tabContent .tabContentContainer {
+    @apply relative w-full h-[100dvh] inline-flex flex-col items-start gap-8 shrink-0 overflow-hidden;
+}

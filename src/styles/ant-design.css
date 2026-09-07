@@ -1,0 +1,69 @@
+/*@import "./tailwind.css";*/
+
+.ant-btn {
+    @apply rounded-[4px];
+}
+
+.ant-btn-primary {
+    @apply text-white;
+}
+
+.ant-select-dropdown {
+    @apply z-[9999999];
+}
+
+.ant-picker-dropdown {
+    @apply !w-auto;
+}
+
+.ant-notification-bottom {
+    @apply !inset-[auto_auto_60px_50%] sm:!inset-[auto_auto_0px_18%];
+}
+
+.ant-notification-bottom .ant-notification-notice-wrapper {
+    @apply !mb-[4px];
+}
+
+.ant-notification-bottom .ant-notification-notice-wrapper .ant-notification-notice {
+    @apply !pt-[10px] !pb-[12px];
+}
+
+.ant-radio-button-wrapper{
+    @apply hover:!text-black;
+}
+
+.ant-notification{
+    @apply z-[1000000] sm:text-base text-sm;
+}
+
+.ant-modal .ant-modal-footer{
+   @apply !text-center;
+}
+
+.ant-modal-wrap, .ant-modal-mask{
+    @apply !z-[50];
+}
+
+@media (max-width: 640px) {
+    .ant-message-top{
+        /*left: 0px !important; ;*/
+        top: 60px !important;
+        /*bottom: auto !important;*/
+    }
+
+    .ant-notification-topLeft {
+        left: 0px !important;
+        top: 60px !important;
+        bottom: auto !important;
+    }
+
+    /*.ant-notification-bottom {*/
+    /*    right: 0px !important; ;*/
+    /*    top: 60px !important;*/
+    /*    bottom: auto !important;*/
+    /*}*/
+
+    /*.ant-notification-bottom {*/
+    /*    inset: auto auto 64px 50% !important;*/
+    /*}*/
+}

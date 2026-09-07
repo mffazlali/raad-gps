@@ -1,0 +1,347 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.authLayout {
+    @apply p-0 m-0 bg-white min-h-[100dvh] sm:h-auto h-[800px] relative;
+}
+
+.authLayout .authLayoutContainer {
+    @apply flex flex-row flex-wrap bg-white justify-center sm:p-0 pb-8;
+}
+
+.authLayout .authLayoutContainer .authLayoutBackgroundWrapper {
+    @apply md:w-7/12 sm:w-6/12 sm:block hidden relative;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutBackgroundWrapper
+.authLayoutBackground {
+    @apply h-[100dvh] object-cover fixed left-0 top-0 md:w-7/12 sm:w-6/12;
+}
+
+.authLayout .authLayoutContainer .authLayoutFormWrapper {
+    @apply bg-white md:w-5/12 sm:w-6/12 w-[358px] flex justify-center items-start sm:pt-[130px] sm:pb-2 pt-24 pb-2 lg:ps-32 lg:pe-[8.12rem];
+}
+
+.authLayout .authLayoutContainer .authLayoutFormWrapper .authLayoutForm {
+    @apply flex flex-col justify-center items-center gap-6;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper {
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject {
+    @apply flex flex-col justify-center items-center gap-4;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.logoWrapper {
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.logoWrapper
+.logo {
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.logoWrapper
+.logo
+.logoIconWrapper {
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.logoWrapper
+.logo
+.logoIconWrapper
+.logoIcon {
+    @apply w-[58px] h-[58px];
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.logoWrapper
+.logo
+.logoTitleWrapper {
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.logoWrapper
+.logo
+.logoTitleWrapper
+.logoTitle {
+    @apply text-primary text-center text-3xl font-semibold leading-[2.4rem];
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.helpWrapper {
+    @apply pt-2;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.helpWrapper
+.help {
+    @apply text-gray-900 text-center text-3xl font-semibold leading-[2.4rem];
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.sloganWrapper {
+    @apply pt-2;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.subjectWrapper
+.subject
+.sloganWrapper
+.slogan {
+    @apply text-lg font-medium text-center text-gray-500 leading-7;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper {
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form {
+    @apply flex flex-col justify-center items-start;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.groupWrapper {
+    @apply flex gap-4 flex-col;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.groupWrapper
+.group {
+    @apply flex flex-col;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.groupWrapper
+.group
+.labelWrapper {
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.groupWrapper
+.group
+.labelWrapper
+.label {
+    @apply text-gray-800 text-right text-base font-medium leading-6;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.groupWrapper
+.group
+.labelWrapper
+.label
+span {
+    @apply text-[#980000];
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.groupWrapper
+.group
+.inputWrapper {
+    @apply flex lg:w-[358px] w-full gap-2 h-[46px] px-[0.88rem] py-[0.65rem] rounded-[8px] border border-solid border-gray-200 bg-white;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.groupWrapper
+.group
+.inputWrapper
+.input {
+    @apply text-gray-900 text-right text-base font-normal leading-6 w-full relative focus:!outline-none;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.hintWrapper {
+    @apply flex flex-col justify-center items-start list-disc gap-[0.4rem] pt-4 ps-6;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.hintWrapper
+.hint {
+    @apply text-[#518756] text-right text-sm font-normal leading-[1.13rem];
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.hintWrapper
+.hint
+span {
+    @apply !text-[#875555];
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.buttonWrapper {
+    @apply mt-8 relative w-full;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.buttonWrapper
+.button {
+    @apply relative flex lg:w-[358px] w-full py-[6px] px-[12px] justify-center items-center gap-2 rounded-[4px] border border-solid border-theme-primary bg-primary-500;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.formWrapper
+.form
+.buttonWrapper
+.button
+span {
+    @apply text-white text-base font-normal leading-6;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.forwardLinkWrapper {
+    @apply mt-8 flex justify-center items-center;
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.forwardLinkWrapper
+.forwardLink {
+    @apply text-black text-center text-xs font-medium leading-[1.125rem];
+}
+
+.authLayout
+.authLayoutContainer
+.authLayoutFormWrapper
+.authLayoutForm
+.forwardLinkWrapper
+.forwardLink
+span {
+    @apply text-primary-500;
+}

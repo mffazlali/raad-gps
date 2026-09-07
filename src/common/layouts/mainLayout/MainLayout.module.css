@@ -1,0 +1,10 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.layout {
+    @apply absolute h-full right-0 top-0 overflow-hidden block;
+    /*sm:block hidden;*/
+}
+
+.layout .layoutContainer {
+    @apply relative h-full flex flex-row  w-screen;
+}

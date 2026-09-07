@@ -1,0 +1,95 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.player {
+    @apply rounded-[10px] bg-gray-100 w-[300px] h-auto shadow-sm shadow-primary absolute right-20 top-2;
+    opacity: 0;
+    animation-name: opacityAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: inherit;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.player .playerContainer {
+    @apply flex w-full flex-col items-start gap-4;
+}
+
+.player .playerContainer .playerHeaderWrapper {
+    @apply w-full
+}
+
+.player .playerContainer .playerHeaderWrapper .playerHeader {
+    @apply flex flex-col gap-2 cursor-move w-full px-1;
+}
+
+.player
+.playerContainer
+.playerHeaderWrapper
+.playerHeader
+.subjects {
+    @apply flex flex-row  justify-between;
+}
+
+.player
+.playerContainer
+.playerHeaderWrapper
+.playerHeader
+.subjects
+.title {
+    @apply text-black text-right text-base leading-6 select-none;
+}
+
+.player
+.playerContainer
+.playerHeaderWrapper
+.playerHeader
+.subjects
+.actions {
+    @apply flex flex-row ;
+}
+
+
+.player
+.playerContainer
+.playerHeaderWrapper
+.playerHeader
+.line {
+    @apply w-full h-auto stroke-[1px] stroke-gray-300 mx-auto;
+}
+
+.player .playerContainer .playerContentWrapper {
+    @apply w-full h-full relative px-4;
+}
+
+.player .playerContainer .playerContentWrapper .playerContent {
+    @apply inline-flex flex-col items-start gap-2 w-full h-full relative;
+}
+
+.player .playerContainer .playerContentWrapper .playerContent .sliderWrapper {
+    @apply w-full;
+}
+
+.player .playerContainer .playerContentWrapper .playerContent .actionsWrapper {
+    @apply flex flex-col justify-center items-center self-stretch gap-2;
+}
+
+.player .playerContainer .playerContentWrapper .playerContent .actionsWrapper .controlsWrapper {
+    @apply flex justify-center items-center gap-8;
+}
+
+
+.player .playerContainer .playerContentWrapper .playerContent .actionsWrapper .controlsWrapper .controlButton{
+    /*@apply w-[24px] h-[24px];*/
+}
+
+@keyframes opacityAnimate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

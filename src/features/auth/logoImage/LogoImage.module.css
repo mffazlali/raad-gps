@@ -1,0 +1,22 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.logoImage {
+}
+
+.logoImage .logoImageContainer {
+  @apply flex flex-row  justify-center gap-4;
+}
+
+.logoImage .logoImageContainer .logoImageIconWrapper {
+}
+
+.logoImage .logoImageContainer .logoImageIconWrapper .logoImageIcon {
+  @apply w-[55.142px] h-[64px];
+}
+
+.logoImage .logoImageContainer .logoImageIconRaadWrapper {
+}
+
+.logoImage .logoImageContainer .logoImageIconRaadWrapper .logoImageIconRaad {
+  @apply w-[55px] h-[56px];
+}

@@ -1,0 +1,32 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.inputSearch {
+}
+
+.inputSearch .inputSearchContainer {
+  @apply flex h-[30px] py-[0.625rem] px-[0.875rem] justify-between items-center gap-2 self-stretch sm:rounded-[8px] rounded-[4px] border border-solid border-gray-200 sm:bg-white bg-theme-light sm:shadow-[0px_1px_2px_0px_rgba(0,0,0,0.05)] shadow-[2px_2px_15px_0px_rgba(0,0,0,0.15)];
+}
+
+.inputSearch .inputSearchContainer .dotsIconWrapper {
+  @apply flex w-[14px] h-[14px] py-[1.75px] justify-center items-center;
+}
+
+.inputSearch .inputSearchContainer .dotsIconWrapper .dotsIcon {
+  @apply w-[10.5px] h-full flex-shrink-0;
+}
+
+.inputSearch .inputSearchContainer .inputTextWrapper {
+  @apply w-full;
+}
+
+.inputSearch .inputSearchContainer .inputTextWrapper .inputText {
+  @apply text-gray-900 text-right text-xs font-normal leading-6 focus:outline-none bg-inherit w-full placeholder-gray-900;
+}
+
+.inputSearch .inputSearchContainer .searchIconWrapper {
+  @apply flex w-[16px] h-[16px] p-[1.333px] justify-center items-center;
+}
+
+.inputSearch .inputSearchContainer .searchIconWrapper .searchIcon {
+  @apply w-[13.333px] h-[13.333px] flex-shrink-0;
+}

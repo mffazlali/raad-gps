@@ -1,0 +1,17 @@
+/*@import "../../../../styles/tailwind.css";*/
+
+.content {
+    @apply w-full z-40 ms-[-60px];
+}
+
+.content .contentContainer {
+    @apply relative h-full min-h-[500px] w-full;
+}
+
+.contentMain {
+    @apply overflow-y-auto overflow-x-hidden;
+}
+
+.contentOther {
+    @apply overflow-y-clip;
+}

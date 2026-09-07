@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tracking inactive icon">
+  <!-- Concentric rings (radar) -->
+  <g fill="none" stroke="#9CA3AF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <circle cx="24" cy="14" r="12" stroke-opacity="0.12"/>
+    <circle cx="24" cy="14" r="8" stroke-opacity="0.22"/>
+    <circle cx="24" cy="14" r="4" stroke-opacity="0.45"/>
+  </g>
+
+  <!-- Pin -->
+  <path d="M24 6.5c-4.418 0-8 3.582-8 8 0 6.4 8 12.544 8.272 12.72a0.9 0.9 0 0 0 1.456 0C23.984 27.044 32 20.9 32 14.5c0-4.418-3.582-8-8-8z"
+        fill="#fff" stroke="#6B7280" stroke-width="1.6"/>
+  <circle cx="24" cy="14.5" r="4.2" fill="#9CA3AF" stroke="#ffffff" stroke-width="1"/>
+  <circle cx="24" cy="14.5" r="1.6" fill="#ffffff"/>
+
+  <!-- Cross/slash to indicate disabled -->
+  <line x1="12" y1="4" x2="36" y2="28" stroke="#EF4444" stroke-width="2.4" stroke-linecap="round" opacity="0.85"/>
+</svg>

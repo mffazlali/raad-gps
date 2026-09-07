@@ -1,0 +1,77 @@
+/*@import "../../../styles/tailwind.css";*/
+
+.popupDevicesMobile {
+    @apply rounded-b-[10px] bg-gray-100 w-screen h-[360px] relative px-4;
+}
+
+.popupDevicesMobile .popupDevicesMobileContainer {
+    @apply w-full h-full relative;
+}
+
+.popupDevicesMobile .popupDevicesMobileContainer .popupDevicesMobileHeaderWrapper {
+    @apply pt-4 pb-2;
+}
+
+.popupDevicesMobile .popupDevicesMobileContainer .popupDevicesMobileHeaderWrapper .popupDevicesMobileHeader {
+    @apply flex flex-col gap-2;
+}
+
+.popupDevicesMobile
+.popupDevicesMobileContainer
+.popupDevicesMobileHeaderWrapper
+.popupDevicesMobileHeader
+.title {
+    @apply text-black text-right text-base font-semibold leading-6 select-none;
+}
+
+.popupDevicesMobile
+.popupDevicesMobileContainer
+.popupDevicesMobileHeaderWrapper
+.popupDevicesMobileHeader
+.line {
+    @apply w-full h-auto stroke-[1px] stroke-gray-300 mx-auto;
+}
+
+.popupDevicesMobile .popupDevicesMobileContainer .popupDevicesMobileContentWrapper {
+    @apply w-full max-h-full relative;
+}
+
+.popupDevicesMobile .popupDevicesMobileContainer .popupDevicesMobileContentWrapper .popupDevicesMobileContent {
+    @apply inline-flex flex-col items-start gap-8 w-full h-full relative;
+}
+
+.popupDevicesMobile
+.popupDevicesMobileContainer
+.popupDevicesMobileContentWrapper
+.popupDevicesMobileContent
+.buttonWrapper {
+    @apply flex py-[0.375rem] px-3 justify-center items-center gap-2 self-stretch rounded-[4px] bg-primary-500;
+}
+
+.popupDevicesMobile
+.popupDevicesMobileContainer
+.popupDevicesMobileContentWrapper
+.popupDevicesMobileContent
+.buttonWrapper
+.icon {
+    @apply w-[16px] h-[16px];
+}
+
+.popupDevicesMobile
+.popupDevicesMobileContainer
+.popupDevicesMobileContentWrapper
+.popupDevicesMobileContent
+.buttonWrapper
+.text {
+    @apply text-white text-center text-sm font-normal leading-5;
+}
+
+@keyframes opacityAnimate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

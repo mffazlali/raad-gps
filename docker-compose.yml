@@ -1,0 +1,16 @@
+services:
+  frontend:
+    image: $IMAGE
+    container_name: "trackar-frontend-dev"
+    restart: always
+    env_file:
+      - ./.env-dev
+    ports:
+      - "3100:3100"
+      - "3200:3200"
+    networks:
+      - develop_raad_network
+
+networks:
+  develop_raad_network:
+    external: true

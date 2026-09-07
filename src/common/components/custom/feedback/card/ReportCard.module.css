@@ -1,0 +1,47 @@
+.card {
+  @apply bg-white rounded-lg shadow-md my-4 overflow-y-auto;
+}
+
+.cardContent {
+  @apply flex flex-col lg:flex-row gap-4 p-4 w-full relative h-full;
+}
+
+.cardContentWrapper {
+  @apply relative flex flex-col lg:flex-row gap-4 h-full w-full;
+}
+
+.sidebar {
+  @apply relative transition-all duration-300 ease-in-out bg-white border-r shadow-sm border-b border-gray-100 lg:border-r lg:border-b-0 origin-right h-full;
+}
+
+.sidebarOpen {
+  @apply w-full opacity-100 lg:min-w-0;
+}
+
+.sidebarClosed {
+  @apply w-[0px] opacity-90;
+}
+
+.toggleButton {
+  @apply absolute -right-4 top-4 bg-white rounded-full w-8 h-8 items-center justify-center shadow-md cursor-pointer z-[1000] hover:bg-gray-50 hover:shadow-lg transition-all duration-200 border border-gray-100 hidden lg:flex hover:after:content-[attr(title)] hover:after:absolute hover:after:right-full hover:after:top-1/2 hover:after:-translate-y-1/2 hover:after:bg-black/80 hover:after:text-white hover:after:px-2 hover:after:py-1 hover:after:rounded hover:after:text-xs hover:after:whitespace-nowrap hover:after:mr-2 hover:after:z-[1001];
+}
+
+.toggleButton:hover {
+  @apply transform scale-105;
+}
+
+.mapSection {
+  @apply w-full lg:h-full h-full overflow-hidden rounded-lg min-h-[340px];
+}
+
+.mapSectionFullWidth {
+  @apply w-full;
+}
+
+.tableSection {
+  @apply w-full h-full lg:h-full overflow-auto min-h-[350px] pb-2;
+}
+
+.chartSection {
+  @apply w-full h-[250px] lg:h-full overflow-hidden min-h-[250px];
+}

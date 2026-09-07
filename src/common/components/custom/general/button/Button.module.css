@@ -1,0 +1,13 @@
+/*@import "tailwindcss";*/
+
+.button {
+    @apply transition-all flex py-[0.375rem] px-3 justify-center items-center gap-2 rounded-[4px]
+}
+
+.button .icon {
+    @apply w-[16px] h-[16px];
+}
+
+.button .text {
+    @apply text-white text-center text-sm font-normal leading-5;
+}

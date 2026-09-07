@@ -1,0 +1,13 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.inputLabel {
+    @apply flex flex-nowrap w-full;
+}
+
+.inputLabel .label {
+    @apply text-gray-800 text-right text-base font-medium leading-6;
+}
+
+.inputLabel .label .required {
+    @apply text-red-500;
+}

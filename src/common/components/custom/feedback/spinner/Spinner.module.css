@@ -1,0 +1,5 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.spinner {
+  @apply block w-5 h-5 rounded-full border-[3px] border-b-green-500 border-l-green-500 border-t-green-500/10 border-r-green-500/10 animate-spin;
+}

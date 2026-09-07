@@ -1,0 +1,9 @@
+/*@import "../../../../../styles/tailwind.css";*/
+
+.pageWrapper{
+    @apply relative w-full h-full py-1 box-content;
+}
+
+.pageWrapper .pageWrapperContainer{
+    @apply relative w-full h-full md:px-4 px-4 overflow-auto;
+}

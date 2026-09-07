@@ -1,0 +1,26 @@
+.hintWrapper {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.hint {
+  display: flex;
+  align-items: center;
+  margin: 4px 0;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.hintIcon {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.hintError {
+  color: #ff4d4f;
+}
+
+.hintSuccess {
+  color: #52c41a;
+} 
