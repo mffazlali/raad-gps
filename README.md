@@ -10,6 +10,16 @@
 
 ---
 
+## پیش‌نمایش
+
+### نسخه دسکتاپ
+https://github.com/user-attachments/assets/da7cb975-4890-4eaf-923f-d1eadbf66071
+
+### نسخه موبایل
+https://github.com/user-attachments/assets/d36a9a90-e6c6-454d-be29-1cb16760c629
+
+---
+
 ## فهرست مطالب
 
 - [معرفی](#معرفی)
